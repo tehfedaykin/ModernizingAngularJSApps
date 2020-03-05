@@ -119,7 +119,7 @@
 			</section>
 			<!----------------------------------------->
 			<section id="modularize">
-				<h2>Modularize App</h2>
+				<h2>1. Modularize App</h2>
 				<p>The <a target="_blank"
 						href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">AngularJS style guide</a> by
 					John Papa</p>
@@ -134,13 +134,25 @@
 			</section>
 			<!----------------------------------------->
 			<section id="build-process">
-				<h2>Update/create build process to compile TypeScript files</h2>
+				<h2>2. Update/Create Build Process to Compile TypeScript Files</h2>
+			</section>
+			<section id="why-typescript">
+				<h2>Why TypeScript?</h2>
+				<img src="img/confused.gif" alt="Wiley Coyote confused">
+			</section>
+			<section id="typescript-rocks">
+				<ul>
+					<li class="fragment">TypeChecking</li>
+					<li class="fragment">Es6 goodies</li>
+					<li class="fragment">Readability</li>
+					<li class="fragment">Documentation</li>
+				</ul>
 			</section>
 			<section id="build-options">
 				<h2>Three main build options</h2>
 				<div class="span-images">
 					<div><img class="plain" src="img/grunt.png" alt="Grunt"></div>
-					<div><img class="plain" src="img/gulp.png" alt="Gulp"></div>
+					<div><img class="plain" src="img/gulp.png" alt="Gulp" style="width:30%;"></div>
 					<div><img class="plain" src="img/webpack.png" alt="Webpack"></div>
 				</div>
 			</section>
@@ -179,7 +191,7 @@
 			</section>
 			<!----------------------------------------->
 			<section id="typescript">
-				<h2>Convert core app structure files to TypeScript</h2>
+				<h2>3. Convert Core App <br /> Files to TypeScript</h2>
 			</section>
 			<!----------------------------------------->
 			<section id="typescript-crash-course">
@@ -239,24 +251,37 @@
 			<section id="app-component-class" data-markdown="code/app-component-class.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
+			<section id="post-typescript">
+				<h2>With TypeScript implemented: </h2>
+				<ul>
+					<li class="fragment">Can encaspulate components/modules</li>
+					<li class="fragment">Can import HTML and css files</li>
+					<li class="fragment">Can import and export features</li>
+					<li class="fragment">Catch errors on compile time</li>
+				</ul>
+			</section>
 			<!----------------------------------------->
 			<section id="RxJS">
-				<h2>Start Using RxJS where it makes sense</h2>
+				<h2>4. Start Using RxJS Where it Makes Sense</h2>
 				<ul>
-					<li>Managing forms</li>
 					<li>Services</li>
-					<li>Routing?</li>
+					<li>Routing</li>
+					<li>Managing forms/user events</li>
+					<li>State Management</li>
 				</ul>
 			</section>
 			<section id="reactive-programming-crash-course">
 				<h2>Reactive Programming Crash Course</h2>
 			</section>
 			<section>
-				<h2>Declarative Programming <br />vs Imperative Programming</h2>
+				<h2>Imperative Programming <br />vs Declarative Programming</h2>
 				<p class="fragment"><b>Imperative</b> - When events occur, code runs and <br />
 					changes the state of the program.</p>
 				<p class="fragment"><b>Declarative</b>-  Specifying HOW values should be generated.</p>
 				<p class="fragment"><b>Reactive</b> - A declarative programming style concerned with data “streams” and propagation of change. RxJS is a reactive <br />programming JavaScript library.</p>
+			</section>
+			<section id="what-is-rxjs">
+				<h2>RxJS is a library that helps us program reactively.</h2>
 			</section>
 			<section id="observable" data-markdown="code/observable.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
@@ -267,27 +292,60 @@
 			<section id="behavior-subject" data-markdown="code/behavior-subject.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
-			<section id="operator" data-markdown="code/operator.md" data-separator="^\n\n\n"
+			<section id="state-management-detour">
+				<img src="img/detour.gif" alt="Wiley Coyote peeking over detour sign">
+
+				<h2>Detour: State Management <br/>
+				<span class="small">(& a case for RxJS)</span></h2>
+				<p>A strategy to handle the state of an application, preferably <br />
+					one that limits mutation/unintended side effects.</p>
+			</section>
+			<section id="javascript-wild-wild-west">
+				<h2>JavaScript is the Wild Wild West</h2>
+				<img src="img/samshooting.gif" alt="Yosemite Same shooting">
+			</section>
+			<section id="state-management-rxjs-behavior-subject">
+				<h2>Scenario: Simple State Management <br />using Angular Services & Behavior Subjects</h2>
+			</section>
+			<section id="user-state-service" data-markdown="code/user-state-service.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
-			<section id="async-pipe" data-markdown="code/async-pipe.md" data-separator="^\n\n\n"
+			<section id="sample-login-flow" data-markdown="code/sample-login-flow.md" data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+			</section>
+			<section id="end-detour">
+				<h2>/detour</h2>
+				<img src="img/enddetour.gif" alt="Wiley Coyote running into steel wall">
+			</section>
+			<section id="operator" data-markdown="code/operator.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
 			<section id="async-pipe-example" data-markdown="code/async-pipe-example.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
+			<section id="async-pipe" data-markdown="code/async-pipe.md" data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+			</section>
 			<section id="queen-obs" data-markdown="code/queen-obs.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
-			<section id="queen-operators-html" data-markdown="code/queen-operators-html.md" data-separator="^\n\n\n"
+			<section id="queen-obs-subscribe" data-markdown="code/queen-obs-subscribe.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
 			<section id="queen-operators-ts" data-markdown="code/queen-operators-ts.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
+			<section id="queen-operators-html" data-markdown="code/queen-operators-html.md" data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+			</section>
+			<section id="rxjs-summary">
+				<h2>RxJS </h2>
+				<p>We can use RxJS in AngularJS to program reactively by creating event streams from user input and http requests to write better, more debuggable, business-logic-oriented code.</p>
+				<p>Using RxJS to approach state management may be one of the quickest ROIs on embracing this library in your app</p>
+			</section>
 			<!----------------------------------------->
 			<section id="angular-elements">
-				<h2>Using Angular Elements</h2>
+				<h2>5. Build New Features Using Angular Elements(web components)</h2>
 			</section>
 			<section id="web-components">
 				<h2>Web Components 101</h2>
@@ -336,6 +394,11 @@
 				<p class="fragment">Do NOT run back to work and refactor your app
 					over the weekend WITHOUT the consent of your team.</p>
 			</section>
+			<section id="psa">
+				<h2>PSA: </h2>
+				<p>AngularJS support from Google will end June 30 2021</p>
+				<p><a href="https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c">https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c</a></p>
+			</section>
 			<!----------------------------------------->
 			<section id="key-concepts">
 				<h2>Key Concepts</h2>
@@ -348,6 +411,7 @@
 					<li class="fragment">Do NOTHING without buy-in from your team!</li>
 				</ul>
 			</section>
+			
 			<!----------------------------------------->
 			<section id="questions">
 				<h2>Questions?</h2>

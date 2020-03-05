@@ -6,7 +6,7 @@ interface IQueen {
   quote: string;
 }
 
-function quoteFunc(queen: IQueen) {
+function quoteFunc(queen: IQueen): string {
   return `${queen.name} said ${queen.quote}`
 }
 

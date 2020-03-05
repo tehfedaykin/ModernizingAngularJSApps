@@ -1,6 +1,6 @@
 ### Async Pipe
 
-Creates a subscription in the template and unsubscribes when component is destroyed.
+Creates a subscription in the template +<br /> unsubscribes when component is destroyed.
 
 ```html
 <ul class="queens">
