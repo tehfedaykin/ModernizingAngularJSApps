@@ -54,13 +54,6 @@
 				<h1>Supporting Old-Fashioned AngularJS Apps in a Modern TypeScript World</h1>
 				<h3 class="small">Jennifer Wadella</h3>
 			</section>
-			<section id="inspo">
-				<h2>#devinspo</h2>
-				<a href="https://twitter.com/iamdevloper/status/1175079688936534018">
-					<img class="plain" src="img/stickwithit.png" alt="to whoever needs to hear this:
-
-					the concept you're currently struggling to learn, stick with it, because it's all going to start to make sense very soon."></a>
-			</section>
 			<section id="me">
 				<div class="speaker-title">
 					<div class="flex-1">
@@ -74,37 +67,36 @@
 					</div>
 				</div>
 				<ul class="small">
-					<li>JavaScript Developer at Bitovi</li>
+					<li>Angular Lead at <a href="bitovi.com">Bitovi</a></li>
 					<li>Legacy code sympathizer</li>
-					<li>Community Organizer</li>
-					<li>Kombucha brewin' crazy plant lady</li>
+					<li>Contact me at <a href="mailto:jennifer@bitovi.com">jennifer@bitovi.com</a></li>
 				</ul>
 			</section>
 			<!----------------------------------------->
 			<section id="the-problem">
 				<h2>The Problem</h2>
-				<h3>"We're going to upgrade our AngularJS app ... some day."</h3>
+				<h3>"We're going to upgrade our AngularJS app <br />... some day."</h3>
 			</section>
 			<section id="prep-for-upgrade">
-				<h2>"How do we keep building features while preparing for an upgrade?"</h2>
+				<h2>"How should the team keep <br />building new features while <br />preparing for an upgrade?"</h2>
 			</section>
 			<section id="update-skills">
-				<h2>"How do I keep my skills updated as a developer?"</h2>
+				<h2>"How do developers keep their <br />skills current in the meantime?"</h2>
 			</section>
 			<section id="update-skills">
-				<h2>"I just got this AngularJS app dropped in my lap to maintain - TF do I do?"</h2>
+				<h2>"We just acquired this AngularJS app <br />- how do we support it?"</h2>
 			</section>
 			<!----------------------------------------->
 			<section id="typescript-today">
-				<h2>You can take advantage of modern techniques TODAY</h2>
+				<h2>Teams can take advantage of modern techniques TODAY</h2>
 			</section>
 			<section id="goals-for-this-talk">
 				<h2>Goals for this Talk</h2>
 				<ul>
-					<li class="fragment">Give you a roadmap of how to modernize your AngularJS app.</li>
-					<li class="fragment">Give you a crash course on modern concepts you may have tuned out on previously</li>
-					<li class="fragment">Give you resources to use to help advocate for modernizing your app.</li>
-					<li class="fragment">Give you an example repository with common scenarios to refer to.</li>
+					<li class="fragment">Draw a roadmap of how to modernize an AngularJS app.</li>
+					<li class="fragment">Give a brief overview of modern front-end coding concepts</li>
+					<li class="fragment">Provide resources to aid team in development.</li>
+					<li class="fragment">Provide an example repository with common scenarios to refer to.</li>
 				</ul>
 			</section>
 			<section id="roadmap">
@@ -134,11 +126,10 @@
 			</section>
 			<!----------------------------------------->
 			<section id="build-process">
-				<h2>2. Update/Create Build Process to Compile TypeScript Files</h2>
+				<h2>2. Update/Create Build Process <br />to Compile TypeScript Files</h2>
 			</section>
 			<section id="why-typescript">
 				<h2>Why TypeScript?</h2>
-				<img src="img/confused.gif" alt="Wiley Coyote confused">
 			</section>
 			<section id="typescript-rocks">
 				<ul>
@@ -156,28 +147,10 @@
 					<div><img class="plain" src="img/webpack.png" alt="Webpack"></div>
 				</div>
 			</section>
-			<section id="grunt-install" data-markdown="code/grunt-install.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="grunt" data-markdown="code/grunt.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
-				data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="gulp-install" data-markdown="code/gulp-install.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="gulp" data-markdown="code/gulp.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
-				data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="webpack">
-				<h2>Webpack</h2>
-			</section>
-			<section id="webpack-setup" data-markdown="code/webpack-setup.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
 			<section id="webpack-needs">
 				<h2>Webpack Needs</h2>
 				<ul>
-					<li class="fragment">Compile TypeScript files (lol duh)</li>
+					<li class="fragment">Compile TypeScript files </li>
 					<li class="fragment">Inject compiled JS bundle to entry file (index.html)</li>
 					<li class="fragment">Serve compiled files</li>
 				</ul>
@@ -189,50 +162,14 @@
 					<li class="fragment">Development vs. test vs. production code</li>
 				</ul>
 			</section>
+			<section id="webpack-setup" data-markdown="code/webpack-setup.md" data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+			</section>
 			<!----------------------------------------->
 			<section id="typescript">
 				<h2>3. Convert Core App <br /> Files to TypeScript</h2>
 			</section>
 			<!----------------------------------------->
-			<section id="typescript-crash-course">
-				<h2>TypeScript Crash Course</h2>
-				<ul>
-					<li>Types - determine what "types" variables should be</li>
-					<li>Classes - special functions that help abstract code</li>
-					<li>Interfaces - way to describe a programatic entity</li>
-					<li>Generics - way to reuse code for different types</li>
-					<li>Es6 Goodness</li>
-				</ul>
-			</section>
-			<!----------------------------------------->
-			<section id="types" data-markdown="code/types.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
-				data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="classes" data-markdown="code/classes.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
-				data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="class-shorthand" data-markdown="code/class-shorthand.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="interfaces" data-markdown="code/interfaces.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="generics" data-markdown="code/generics.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="es6" data-markdown="code/es6.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="es6-2" data-markdown="code/es6-2.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="es6-3" data-markdown="code/es6-3.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<!----------------------------------------->
-			<section id="typescript">
-				<h2>Back to AngularJS App Conversion</h2>
-			</section>
 			<section id="install-angular-types" data-markdown="code/install-angular-types.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
@@ -278,23 +215,13 @@
 				<p class="fragment"><b>Imperative</b> - When events occur, code runs and <br />
 					changes the state of the program.</p>
 				<p class="fragment"><b>Declarative</b>-  Specifying HOW values should be generated.</p>
-				<p class="fragment"><b>Reactive</b> - A declarative programming style concerned with data “streams” and propagation of change. RxJS is a reactive <br />programming JavaScript library.</p>
+				<p class="fragment"><b>Reactive</b> - A declarative programming style concerned with data “streams” and propagation of change.</p>
 			</section>
 			<section id="what-is-rxjs">
 				<h2>RxJS is a library that helps us program reactively.</h2>
 			</section>
-			<section id="observable" data-markdown="code/observable.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="subject" data-markdown="code/subject.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="behavior-subject" data-markdown="code/behavior-subject.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
 			<section id="state-management-detour">
 				<img src="img/detour.gif" alt="Wiley Coyote peeking over detour sign">
-
 				<h2>Detour: State Management <br/>
 				<span class="small">(& a case for RxJS)</span></h2>
 				<p>A strategy to handle the state of an application, preferably <br />
@@ -305,7 +232,8 @@
 				<img src="img/samshooting.gif" alt="Yosemite Same shooting">
 			</section>
 			<section id="state-management-rxjs-behavior-subject">
-				<h2>Scenario: Simple State Management <br />using Angular Services & Behavior Subjects</h2>
+				<h2>Scenario: Simple State Management <br /></h2>
+					<h3>using Angular Services & Behavior Subjects</h3>
 			</section>
 			<section id="user-state-service" data-markdown="code/user-state-service.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
@@ -316,9 +244,6 @@
 			<section id="end-detour">
 				<h2>/detour</h2>
 				<img src="img/enddetour.gif" alt="Wiley Coyote running into steel wall">
-			</section>
-			<section id="operator" data-markdown="code/operator.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
 			<section id="async-pipe-example" data-markdown="code/async-pipe-example.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
@@ -332,16 +257,11 @@
 			<section id="queen-obs-subscribe" data-markdown="code/queen-obs-subscribe.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
-			<section id="queen-operators-ts" data-markdown="code/queen-operators-ts.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="queen-operators-html" data-markdown="code/queen-operators-html.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
 			<section id="rxjs-summary">
 				<h2>RxJS </h2>
-				<p>We can use RxJS in AngularJS to program reactively by creating event streams from user input and http requests to write better, more debuggable, business-logic-oriented code.</p>
-				<p>Using RxJS to approach state management may be one of the quickest ROIs on embracing this library in your app</p>
+				<p>We can use RxJS in AngularJS to write better, more debuggable, business-logic-oriented code.</p>
+				<p>Using RxJS to approach state management may be one of <br />
+					the quickest ROIs on embracing this library in your app</p>
 			</section>
 			<!----------------------------------------->
 			<section id="angular-elements">
@@ -364,24 +284,18 @@
 			</section>
 			<section id="angular-elements-explanation">
 				<h2>Angular Elements = </h2>
-				<p>Angular Components packaged as custom elements(web components)</p>
+				<p>Angular Components packaged as <br />custom elements (web components)</p>
 			</section>
-			<!-- <section id="angular-element-lifecycle" data-markdown="code/angular-element-lifecycle.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="angular-element-attributes" data-markdown="code/angular-element-attributes.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="angular-element-events" data-markdown="code/angular-element-events.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section> -->
 			<section id="angular-elements-research">
 				<h2>Further Angular Elements Exploration:</h2>
 				<ul>
 					<li><a href="https://angular.io/guide/elements">Angular Guide on Angular Elements</a></li>
-					<li><a href="https://medium.com/capital-one-tech/capital-one-is-using-angular-elements-to-upgrade-from-angularjs-to-angular-42f38ef7f5fd">How Capital One is Using Angular Elements to Upgrade from AngularJS</a></li>
-					<li><a href="https://steele.blue/custom-elements-angularjs">Building Custom Elements That Work With AngularJS 1.x and Angular</a></li>
-					<li><a href="https://www.youtube.com/watch?v=Z1gLFPLVJjY">"Elements in v6 and Beyond - Rob Wormald" - NG Conf 2018</a></li>
+					<li><a href="https://medium.com/capital-one-tech/capital-one-is-using-angular-elements-to-upgrade-from-angularjs-to-angular-42f38ef7f5fd">How Capital One is Using Angular Elements <br />
+						to Upgrade from AngularJS</a></li>
+					<li><a href="https://steele.blue/custom-elements-angularjs">Building Custom Elements That Work With <br />
+						AngularJS 1.x and Angular</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Z1gLFPLVJjY">"Elements in v6 and Beyond - Rob Wormald"
+						<br />- NG Conf 2018</a></li>
 				</ul>
 			</section>
 			<!----------------------------------------->
@@ -391,8 +305,12 @@
 			</section>
 			<section id="what-not-to-do">
 				<h2>What NOT to Do</h2>
-				<p class="fragment">Do NOT run back to work and refactor your app
-					over the weekend WITHOUT the consent of your team.</p>
+				<p class="fragment">Do NOT return to work & 
+					demand the team <br />refactor the app
+					using this approach.</p>
+			</section>
+			<section id="chicken-pig">
+				<img class="plain" src="img/chicken-vs-pig.png" alt="chicken vs pig">
 			</section>
 			<section id="psa">
 				<h2>PSA: </h2>
@@ -403,7 +321,7 @@
 			<section id="key-concepts">
 				<h2>Key Concepts</h2>
 				<ul>
-					<li class="fragment">Begin refactoring your app to follow the AngularJS style guide</li>
+					<li class="fragment">Begin refactoring apps to follow the AngularJS style guide</li>
 					<li class="fragment">Choose a build process that makes sense for your team</li>
 					<li class="fragment">Start with rewriting major files into TypeScript</li>
 					<li class="fragment">Implement RxJS where it makes sense</li>
@@ -431,6 +349,7 @@
 	<div class="twitter-overlay">
 		<span>#ModernizingAngularJS</span>
 		<span>@likeOMGitsFEDAY</span>
+		<span><a href="mailto:jennifer@bitovi.com">jennifer@bitovi.com</a></span>
 	</div>
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
