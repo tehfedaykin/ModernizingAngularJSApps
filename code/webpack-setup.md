@@ -26,7 +26,6 @@ module.exports = {
 		new webpack.ProgressPlugin(), 
 		new HtmlWebpackPlugin({
 			template: './app/index.html',
-			//filename: './dist/index.html',
 			inject: 'body',
 			title: 'testing',
 			hash: true,

@@ -139,6 +139,9 @@
 					<li class="fragment">Documentation</li>
 				</ul>
 			</section>
+			<section id="but-first-compile" data-markdown="code/typescript-compile.md" data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+			</section>
 			<section id="build-options">
 				<h2>Three main build options</h2>
 				<div class="span-images">
@@ -201,14 +204,14 @@
 			<section id="RxJS">
 				<h2>4. Start Using RxJS Where it Makes Sense</h2>
 				<ul>
-					<li>Services</li>
-					<li>Routing</li>
 					<li>Managing forms/user events</li>
 					<li>State Management</li>
+					<li>Services</li>
+					<li>Routing</li>
 				</ul>
 			</section>
 			<section id="reactive-programming-crash-course">
-				<h2>Reactive Programming Crash Course</h2>
+				<h2>Reactive Programming TL;DR</h2>
 			</section>
 			<section>
 				<h2>Imperative Programming <br />vs Declarative Programming</h2>
@@ -219,32 +222,27 @@
 			</section>
 			<section id="what-is-rxjs">
 				<h2>RxJS is a library that helps us program reactively.</h2>
+				<p>(You'll hear much more about this later in the day)</p>
 			</section>
-			<section id="state-management-detour">
-				<img src="img/detour.gif" alt="Wiley Coyote peeking over detour sign">
-				<h2>Detour: State Management <br/>
-				<span class="small">(& a case for RxJS)</span></h2>
-				<p>A strategy to handle the state of an application, preferably <br />
-					one that limits mutation/unintended side effects.</p>
+			<section id="rxjs-scenario">
+				<h3>Example Scenario: Photo Albums Widget</h3>
+				<ul>
+					<li class="fragment">Feature to organize albums and photos</li>
+					<li class="fragment">User can select/deselect albums, sort by name <br />or created date, apply CRUD operations</li>
+					<li class="fragment">User can select/deselect photos, sort by name <br />or created date, apply CRUD operations</li>
+					<li class="fragment">Batch CRUD operations should be able to be applied<br /> to selected alumbs/photos</li>
+				</ul>
 			</section>
 			<section id="javascript-wild-wild-west">
 				<h2>JavaScript is the Wild Wild West</h2>
 				<img src="img/samshooting.gif" alt="Yosemite Same shooting">
 			</section>
-			<section id="state-management-rxjs-behavior-subject">
-				<h2>Scenario: Simple State Management <br /></h2>
-					<h3>using Angular Services & Behavior Subjects</h3>
-			</section>
-			<section id="user-state-service" data-markdown="code/user-state-service.md" data-separator="^\n\n\n"
+			<section id="imperative-approach" data-markdown="code/imperative-approach.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
-			<section id="sample-login-flow" data-markdown="code/sample-login-flow.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>
-			<section id="end-detour">
-				<h2>/detour</h2>
-				<img src="img/enddetour.gif" alt="Wiley Coyote running into steel wall">
-			</section>
+			<section id="declarative-approach" data-markdown="code/declarative-approach.md" data-separator="^\n\n\n"
+			data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+		</section>
 			<section id="async-pipe-example" data-markdown="code/async-pipe-example.md" data-separator="^\n\n\n"
 				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
 			</section>
@@ -265,7 +263,7 @@
 			</section>
 			<!----------------------------------------->
 			<section id="angular-elements">
-				<h2>5. Build New Features Using Angular Elements(web components)</h2>
+				<h2>5. Build New Features Using Angular Elements (web components)</h2>
 			</section>
 			<section id="web-components">
 				<h2>Web Components 101</h2>
@@ -336,10 +334,10 @@
 				<img style="height:300px" class="plain" src="img/headtilt.gif" alt="Corgi confused">
 				<p>Slides available at: <a href="https://tehfedaykin.github.io/ModernizingAngularJSApps/"
 						target="_blank">tehfedaykin.github.io/ModernizingAngularJSApps</a></p>
-				<p>Example App: <a href="https://github.com/tehfedaykin/AngularJSQueens"
+				<!-- <p>Example App: <a href="https://github.com/tehfedaykin/AngularJSQueens"
 						target="_blank">https://github.com/tehfedaykin/AngularJSQueens</a></p>
 					<p><a href="https://drag-race-api.readme.io/docs">No Key No Shade: A RuPaul's Drag Race API
-					</a></p>
+					</a></p> -->
 				<!-- <p class="small">VS Code theme - <a
 						href="https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode">SynthWave '84 by Robb
 						Owen</a></p> -->
